@@ -21,4 +21,12 @@ public class TestCalculator
         double result = Calc.sub(40, 10);
         assertEquals(30, result, 0);
     }
+
+    @Test
+    public void testMultiply()
+    {
+        Calculator Calc = new Calculator();
+        double result = Calc.mult(2, 2);
+        assertEquals(4, result, 0);
+    }
 }
