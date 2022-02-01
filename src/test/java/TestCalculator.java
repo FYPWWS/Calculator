@@ -29,4 +29,12 @@ public class TestCalculator
         double result = Calc.mult(2, 2);
         assertEquals(4, result, 0);
     }
+
+    @Test
+    public void testDiv()
+    {
+        Calculator Calc = new Calculator();
+        double result = Calc.div(10, 2);
+        assertEquals(5, result, 0);
+    }
 }

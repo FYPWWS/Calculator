@@ -17,4 +17,9 @@ public class Calculator
     {
         return nb1 * nb2;
     }
+
+    public double div(double nb1, double nb2)
+    {
+        return nb1 / nb2;
+    }
 }
