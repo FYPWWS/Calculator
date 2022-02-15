@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Calculator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator</a> &gt; <a href="index.source.html" class="el_package">ie.gmit.week2</a> &gt; <span class="el_source">Calculator.java</span></div><h1>Calculator.java</h1><pre class="source lang-java linenums">package ie.gmit.week2;
+
+public class Calculator
+{
+    // This method will add two numbers
+//    public double add(double nb1, double nb2)
+//    {
+//        return nb1 + nb2;
+//    }
+    public Calculator()
+<span class="fc" id="L11">    {</span>
+<span class="fc" id="L12">    }</span>
+
+
+    public int sub(int nb1, int nb2)
+    {
+<span class="pc bpc" id="L17" title="1 of 4 branches missed.">        if(nb1 &gt;= 0 &amp;&amp; nb1 &lt; 1000)</span>
+        {
+<span class="fc" id="L19">            int result = nb1 - nb2;</span>
+<span class="fc" id="L20">            return result;</span>
+        }
+        else
+        {
+<span class="fc" id="L24">            String message = &quot;Invalid Input&quot;;</span>
+<span class="fc" id="L25">            throw new IllegalArgumentException(message);</span>
+        }
+    }
+
+
+//    public double mult(double nb1, double nb2)
+//    {
+//        return nb1 * nb2;
+//    }
+//
+//    public double div(double nb1, double nb2)
+//    {
+//        return nb1 / nb2;
+//    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
